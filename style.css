@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: Arial;
+}
+body{
+  background-color: #1f1e1e;
+}
+#top-text{
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 110px;
+}
+button img{
+  height: 80%;
+}
+.icon{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-color: transparent;
+  border: 3px solid white;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  transition: 0.4s;
+  object-fit: cover;
+}
+.icon:hover{
+  cursor: pointer;
+  opacity: 0.4;
+}
+#js-result{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+#reset-button{
+  padding:10px 15px;
+  margin-top: 19px;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 18px;
+}
+#reset-button:active{
+  opacity: 0.4;
+}
+#js-move img{
+  height: 80px;
+}
+#js-move{
+  margin-left: 23px;
+  font-size: 22px;
+  font-weight: 500;
+}
+#js-score{
+  margin-top: 40px;
+  font-weight:600;
+  margin-left: 20px;
+}

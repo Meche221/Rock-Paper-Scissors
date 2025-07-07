@@ -4,32 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>Rock Paper Scissors</p>
+    <p id="top-text">Rock Paper Scissors</p>
 
-    <button
+    <button class="icon"
       onclick="
-      playGame('Rock');
-      ">Rock
+      playGame('Rock');">
+      <img src="image/rock.png">
     </button>
 
-    <button
+    <button class="icon"
       onclick="
-      playGame('Paper');
-      ">Paper
+      playGame('Paper');">
+      <img src="image/paper.png">
     </button>
     
-    <button
+    <button class="icon"
       onclick="
-      playGame('Scissors');
-      ">Scissors
+      playGame('Scissors');">
+      <img src="image/scissors.png" alt="">
     </button>
     <p id="js-result"></p>
-    <p id="js-move"></p>
+    <p id="js-move">
+      You
+      <img src="image/rock.png" alt="">
+      <img src="image/scissors.png" alt="">
+      Computer
+    </p>
     <p id="js-score"></p>
 
-    <button onclick="
+    <button id="reset-button" onclick="
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
